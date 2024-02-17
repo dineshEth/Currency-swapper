@@ -28,12 +28,12 @@ function App() {
   return (
     <>
       <div className='w-screen h-screen  bg-cover flex justify-center items-center' style={{backgroundImage:`url(${img})`}}>
-        <div className='bg-[rgba(17, 25, 40, 0.75)] md:w-3/2 rounded-[12px] border-[1px] border-[rgba(255, 255, 255, 0.125)] backdrop-blur-[16px] backdrop-saturate-[180%] p-2' >
+        <div className='bg-[rgba(17, 25, 40, 0.75)] w-[90%] max-w-md rounded-[12px] border-[1px] border-[rgba(255, 255, 255, 0.125)] backdrop-blur-[40px] backdrop-saturate-[180%] p-2' >
           <form action="">
             <InputBox amount={amount} setAmount={setAmount} label="From" allowed={true} from={from} currencyOptions={currencyOptions} setFrom={setFrom} 
             />
             <InputBox convertedValue={convertedValue} amount={amount} setAmount={setAmount} label="To" to={to} allowed={false} setTo={setTo}  currencyOptions={currencyOptions}/>
-            <Button  From={from} To={to} handleSubmit={handleSubmit} />
+            {/* <Button  From={from} To={to} handleSubmit={handleSubmit} /> */}
           </form>
         </div>
       </div>
